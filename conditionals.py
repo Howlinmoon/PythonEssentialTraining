@@ -1,7 +1,9 @@
 
 
-a, b = 2, 1
+a, b = 0, 1
 if a < b:
     print('a ({}) is less than b ({})'.format(a, b))
 else:
     print('a ({}) is not less than b ({})'.format(a, b))
+    
+print("a is less than b" if a < b else "a is not less than b")
