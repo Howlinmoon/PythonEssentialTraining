@@ -5,6 +5,7 @@
 def main():
     print("This is the syntax.py file.")
     egg()
+print("This is line is printed first")
 
 def egg():
     print("egg was called")
