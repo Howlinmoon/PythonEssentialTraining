@@ -4,6 +4,7 @@
 
 def main():
     for n in primes():
+        # create a list of prime numbers less than 100
         if n > 100: break
         print(n)
 
@@ -12,12 +13,15 @@ def isprime(n):
         return False
     for x in range(2, n):
         if n % x == 0:
+            # found a divisor, not prime
             return False
     else:
         return True
 
 def primes(n = 1):
+    # note, we start with a default of 1...
     while(True):
+        # yield makes this a generator function
         if isprime(n): yield n
         n += 1 
 
