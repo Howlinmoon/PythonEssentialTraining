@@ -4,6 +4,7 @@
 
 def main():
     a, b = 3, 1
+    # traditional if, else if, else
     if a < b:
         print("a is less than b")
     elif a > b:
