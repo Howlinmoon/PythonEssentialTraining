@@ -1,3 +1,3 @@
 # PythonEssentialTraining
 
-Left off with 06_04
+Left off with 07_02
