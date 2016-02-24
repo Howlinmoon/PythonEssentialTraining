@@ -11,7 +11,7 @@ def main():
         print("Can not open file:", e)
         
     except ValueError as e:
-        print('Bad Filename structure:', e)
+        print('Bad Filename format:', e)
         
 def readfile(filename):
     # create our own exception if the filename doesn't end with .txt
