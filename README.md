@@ -1,3 +1,3 @@
 # PythonEssentialTraining
 
-Left off with 12_06
+Left off with 12_07
