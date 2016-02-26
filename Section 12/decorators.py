@@ -19,13 +19,26 @@ class Duck:
         return self.properties.get(key, None)
 
     # an accessor is created via an @ sign
-
+    # reminds me of overloading from Java
     @property
     def color(self):
         return self.properties.get('color', None)
 
+    # now we use that property as a setter
+    @color.setter
+    def color(self, c):
+        self.properties['color'] = c
+
+    # and likewise a deleter
+    @color.deleter
+    def color(self):
+        del self.properties['color']
+
+
 def main():
-    donald = Duck(color = 'blue')
-    print(donald.get_property('color'))
+    donald = Duck()
+    # set donald's color
+    donald.color = 'blue'
+    print(donald.color)
 
 if __name__ == "__main__": main()
