@@ -23,7 +23,7 @@ class numwords():
             'o\'clock', 'quarter', 'half'
         ), 'range': {
             'hundred': 'hundred'
-        } 'misc': {
+        }, 'misc': {
             'minus': 'minus'
         }
     }
@@ -67,7 +67,7 @@ class saytime(numwords):
         e.g., fourteen til noon, quarter past one, etc.
     """
 
-   _specials = {
+    _specials = {
         'noon': 'noon',
         'midnight': 'midnight',
         'til': 'til',
@@ -126,7 +126,7 @@ def main():
             try: print(saytime(*(sys.argv[1].split(':'))).words())
             except TypeError: print("Invalid time ({})".format(sys.argv[1]))
     else:
-        print(saytime_t(time.localtime).words)
+        print(saytime_t(time.localtime()).words())
 
 def test():
     print("\nnumbers test:")
