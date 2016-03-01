@@ -25,7 +25,7 @@ class AnimalActions:
 class Duck(AnimalActions):
     strings = dict(
         quack = "Quaaaaak!",
-        faethers = "The duck has gray and white feathers."
+        feathers = "The duck has gray and white feathers."
     )
 
 class Person(AnimalActions):
@@ -50,7 +50,7 @@ def in_the_doghouse(dog):
 
 def in_the_forest(duck):
     print(duck.quack())
-    print(duck.feathers)
+    print(duck.feathers())
 
 def main():
     donald = Duck()
