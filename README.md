@@ -1,3 +1,3 @@
 # PythonEssentialTraining
 
-Left off with 19_01
+Left off with 19_02
